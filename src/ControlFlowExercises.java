@@ -12,10 +12,11 @@ public class ControlFlowExercises {
 
 ////        -------------1a----------------
 //
-////        int i = 5;
-////        while (i <= 15) {
-////            System.out.println(i++);
-////        }
+//        int u = 5;
+//        while (u <= 15) {
+//            System.out.println(u + " ");
+//              u++;
+//        }
 //
 ////        -------------1b----------------
 ////        -----count by 2's starting with 0---------
@@ -48,14 +49,14 @@ public class ControlFlowExercises {
 //            System.out.println(w);
 //        }
 //
-//        --------------2----------------
-
-//        ------Write a program that prints the numbers from 1 to 100.-----
+////        --------------2----------------
+//
+////        ------Write a program that prints the numbers from 1 to 100.-----
 //        for (int r = 1; r <= 100; r++){
 //            System.out.println(r);
 //        }
-
-//        ----For multiples of three: print “Fizz” instead of the number.-----
+//
+////        ----For multiples of three: print “Fizz” instead of the number.-----
 //        for (int t = 1; t <= 100; t++){
 //            if (t % 3 == 0 && t % 5 == 0){
 //                System.out.print("FizzBuzz\n");
@@ -69,20 +70,45 @@ public class ControlFlowExercises {
 //            }
 //            System.out.println(t);
 //        }
+//
+////        ------------3--------------
+//        Formatter fmt;
+//        System.out.println("Please enter a number:");
+//        int userInput = scanner.nextInt();
+//
+//        System.out.println("number | squared | cubed");
+//        System.out.println("-------|---------|------");
+//        for (int i = 1; i <= userInput; i++) {
+//            fmt = new Formatter();
+//
+//            fmt.format("%4d %6d %6d", i, i * i, i * i * i);
+//            System.out.println(fmt);
+//        }
 
-//        ------------3--------------
-        Formatter fmt;
-        System.out.println("Please enter a number:");
-        int userInput = scanner.nextInt();
+//        ------------4--------------
+        boolean anotherGrade = true;
+        do {
+        System.out.println("Please enter a grade:");
+        int gradeInput = scanner.nextInt();
 
-
-        for (int i = 1; i <= userInput; i++) {
-            fmt = new Formatter();
-
-            fmt.format("%4d %4d %4d", i, i * i, i * i * i);
-            System.out.println(fmt);
+        if (gradeInput >= 88) {
+            System.out.println("A");
+        } else if (gradeInput >= 80) {
+            System.out.println("B");
+        } else if (gradeInput >= 67) {
+            System.out.println("C");
+        } else if (gradeInput >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("you failed");
         }
 
+        System.out.println("would you like to continue (y/n)?");
+        String ueserResponse = scanner.next();
+        if (ueserResponse.equalsIgnoreCase("Y")) {
+            anotherGrade = false;
+        }
+    }while (anotherGrade);
 
 
 
