@@ -6,6 +6,9 @@ public class SyntaxTypesVariable {
 
 //        JAVA VARIABLE DECLARATION
 //        DATATYPE -> NAME = VALUE
+        double pi = 3.14159;
+
+        System.out.printf("The value of pi is approximately: %s.%n", pi);
 
 
 //        TRY TO PICK LOGICAL NUMBERS FOR byte AND short (numbers that are unlikely to change or go past the byte or short limit)
