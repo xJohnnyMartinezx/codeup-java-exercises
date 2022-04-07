@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
 //        -------------1a----------------
 
@@ -9,14 +12,14 @@ public class ControlFlowExercises {
         }
 
 //        -------------1b----------------
-        int j;
-        do {
-            for(int j = 0; j < 100; j++) {
-                System.out.println(j);
-            }
+//        int j = 0;
+//        do {
+//            if (j % 2 == 0) {
+//
+//            } j++;
+//            System.out.println(j);
+//        } while (j <= 100);
 
-            System.out.println(j);
-        } while (j <= 100);
 
 
     }
