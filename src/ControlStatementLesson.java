@@ -53,21 +53,21 @@ public class ControlStatementLesson {
 //
 
 //        -----------------Example-----------
-        int inTransaction = 0;
-        int walletBalance = 150;
-        int transactionAmount;
-
-//        IN TRANACT MUST BE ZERO TO START
-        if (inTransaction){
-
-//            CONTINUE LOOP WHILE WALLET BAL IS MORE THAN FIVE
-            while (walletBalance > 5) {
-                System.out.println("making transact");
-                System.out.println("wallet bal b4 transact: " + walletBalance);
-                walletBalance -= transactionAmount;
-                System.out.println("wall bal post transact" + walletBalance);
-            }
-        }
+//        int inTransaction = 0;
+//        int walletBalance = 150;
+//        int transactionAmount;
+//
+////        IN TRANACT MUST BE ZERO TO START
+//        if (inTransaction){
+//
+////            CONTINUE LOOP WHILE WALLET BAL IS MORE THAN FIVE
+//            while (walletBalance > 5) {
+//                System.out.println("making transact");
+//                System.out.println("wallet bal b4 transact: " + walletBalance);
+//                walletBalance -= transactionAmount;
+//                System.out.println("wall bal post transact" + walletBalance);
+//            }
+//        }
 
 
     }
