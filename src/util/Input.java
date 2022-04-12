@@ -19,8 +19,8 @@ public class Input {
 
     // GETTERS AND SETTERS
 
-    public String getString() {
-        System.out.println("Enter a string:");
+    public String getString(String prompt) {
+        System.out.println(prompt);
         return this.scanner.nextLine();
     }
 
@@ -29,11 +29,7 @@ public class Input {
     public boolean yesNo() {
         System.out.println("Enter a Yes or No:");
         String userAnswer = this.scanner.nextLine();
-        if (userAnswer.equalsIgnoreCase("yes") || userAnswer.equalsIgnoreCase("y")) {
-            return true;
-        } else {
-            return false;
-        }
+        return userAnswer.equalsIgnoreCase("yes") || userAnswer.equalsIgnoreCase("y");
     }
 
     //    --------------------
@@ -60,7 +56,7 @@ public class Input {
 
     double getDoubleRange(double min, double max){
         System.out.println("Enter decimal between " + min + " and " + max + ": ");
-        double userDec = this.scanner.nextFloat();
+        double userDec = this.scanner.nextDouble();
         if ((userDec >= min) && (userDec <= max)) {
             System.out.println("Perfect, good choice in decimal.");
         } else {
@@ -72,9 +68,9 @@ public class Input {
 
     //    --------------------
 
-    double getDouble(){
-        System.out.println("Enter an number in decimal format.");
-        return this.scanner.nextFloat();
+    public double getDouble(String prompt){
+        System.out.println(prompt);
+        return this.scanner.nextDouble();
     }
 
 

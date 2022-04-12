@@ -11,12 +11,12 @@ public class InputTest {
         Input getInt = new Input();
         Input decMinMax = new Input();
         Input decNum = new Input();
-        System.out.println(input1.getString());
+        System.out.println(input1.getString("Enter a string."));
         System.out.println(yesOrNo.yesNo());
         System.out.println(minMax.getIntRange(1,10));
         System.out.println(getInt.getInt());
         System.out.println(decMinMax.getDoubleRange(1,10));
-        System.out.println(decNum.getDouble());
+        System.out.println(decNum.getDouble("Enter a decimal number."));
 
 
     }
