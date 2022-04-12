@@ -14,7 +14,7 @@ public class GameRunner {
 
         System.out.println(otherZombie.getMaxHealth());
         otherZombie.setMaxHealth(50);
-        System.out.println(otherZombie.setMaxHealth());
+//        System.out.println(otherZombie.setMaxHealth());
 
     }
 }
