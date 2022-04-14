@@ -8,9 +8,9 @@ public class Rectangle {
     protected int width;
 
 //  ----------CONSTRUCTOR------------
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
+    public Rectangle(int lengthToSet, int widthToSet) {
+        this.length = lengthToSet;
+        this.width = widthToSet;
     }
 
     // --------GETTERS AND SETTERS--------
@@ -21,7 +21,7 @@ public class Rectangle {
     }
 
     public int getPerimeter() {
-        return 2 * this.length + 2 * this.width;
+        return (2 * this.length) + (2 * this.width);
 
     }
 
