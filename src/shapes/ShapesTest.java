@@ -22,12 +22,6 @@ public class ShapesTest {
         System.out.println("super square area: " + square.getArea());
         System.out.println("super square perim: " + square.getPerimeter());
 
-//        ------------SQUARE OVERRIDING OG RECTANGLE METHODS-----------
-//        Square box3 = new Square(5);
-//        System.out.println("Square class Area: " + box3.getArea());
-//        System.out.println("Square class Perim: " + box3.getPerimeter());
-
-
 
     }
 
