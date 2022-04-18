@@ -30,13 +30,23 @@ package shapes;
 //--------------------------------------------------------------------------
 
 
+
+//----------------INTERFACES AND ABSTRACT CLASSES EXERCISES-----------------
+
 public class ShapesTest {
 
     public static void main(String[] args) {
 
         Measurable myShape;
-        myShape = new Rectangle(5,5);
+        Measurable myShape2;
 
+        myShape = new Rectangle(5,10);
+        myShape2 = new Square(2);
+
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape2.getArea());
+        System.out.println(myShape2.getPerimeter());
 
     }
 }

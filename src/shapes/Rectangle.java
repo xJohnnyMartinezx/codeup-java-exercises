@@ -31,27 +31,34 @@ package shapes;
 //--------------------------------------------------------------------------
 
 
+//------------INTERFACES AND ABSTRACT CLASSES EXERCISES---------------
+
+
 public class Rectangle extends Quadrilateral implements Measurable{
 
 
+    public Rectangle(int num1, int num2) {
+        super(num1, num2);
+    }
+
     @Override
     public double getPerimeter() {
-        return 0;
+        return (2 * this.length) + (2 * this.width);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return this.length * this.width;
     }
 
     @Override
     public int setLength() {
-        return 0;
+        return super.length;
     }
 
     @Override
     public int setWidth() {
-        return 0;
+        return super.width;
     }
 }
 

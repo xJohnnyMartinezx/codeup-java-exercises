@@ -1,5 +1,8 @@
 public class Person {
 
+
+
+//-------------MAIN METHOD--------------
     public static void main(String[] args) {
         Person person = new Person("Johnny");
         Person person2 = new Person("Joe");
@@ -13,7 +16,7 @@ public class Person {
 
 
 //    CONSTRUCTOR
-public Person (String name) {
+public Person(String name) {
     this.name = name;
 }
 
