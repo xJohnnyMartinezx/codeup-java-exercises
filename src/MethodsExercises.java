@@ -141,7 +141,8 @@ public class MethodsExercises {
         return rolledNumber;
     }
 
-    //    -------------------Exercise 5.----------------------
+    //    -------------------Exercise 5. LOCATED ON HighLow class----------------------
+
 
 
 
