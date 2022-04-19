@@ -8,7 +8,7 @@ public class Input {
 //    ------------------- EXERCISE 1.----------------
 
     //PROPERTIES
-    private Scanner scanner;
+    public Scanner scanner;
 
     //    CONSTRUCTOR
 
@@ -72,9 +72,4 @@ public class Input {
         System.out.println(prompt);
         return this.scanner.nextDouble();
     }
-
-
-
-
-
 }
