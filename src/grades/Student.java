@@ -1,13 +1,14 @@
 package grades;
+
 import java.util.ArrayList;
 
 public class Student {
 
     public static void main(String[] args) {
-       Student student1 = new Student("Johnny");
-       student1.addGrade(90);
-       student1.addGrade(80);
-       student1.addGrade(95);
+        Student student1 = new Student("Johnny");
+        student1.addGrade(90);
+        student1.addGrade(80);
+        student1.addGrade(95);
         Student student2 = new Student("Ryan");
         student2.addGrade(90);
         student2.addGrade(70);
@@ -27,28 +28,30 @@ public class Student {
 
     }
 
-// --------PROPERTIES--------
-    public String studentName;
-    public ArrayList<Integer> grades;
+    // --------PROPERTIES--------
+    private String studentName;
+    private ArrayList<Integer> grades;
 
 
-
-//    -----STUDENT CONSTRUCTOR--------
-    public Student(String name){
+    //    -----STUDENT CONSTRUCTOR--------
+    public Student(String name) {
         this.studentName = name;
         this.grades = new ArrayList<>();
     }
 
-//---------GETTERS AND SETTERS------------
+    //---------GETTERS AND SETTERS------------
     // returns the student's name
     public String getName() {
         return this.studentName;
     }
+
     // adds the given grade to the grades property
-    public void addGrade(int grade){
+    public void addGrade(int grade) {
         this.grades.add(grade);
     }
-//------------CALCULATES GRADE AVG--------------
+
+
+    //------------CALCULATES GRADE AVG--------------
     // returns the average of the students grades
     public double getGradeAverage() {
         double sum = 0;
@@ -58,5 +61,17 @@ public class Student {
         }
         return sum / grades.size();
     }
-
 }
+
+
+//        int totalPoints = this.grades.stream().reduce(0, (sum, currentGradeElement)->{
+//            System.out.println("Sum is currently: " + sum);
+//            System.out.println("Grade is currently: " + currentGradeElement);
+//            System.out.println("***********************");
+//            return sum + currentGradeElement;
+//        });
+//        System.out.println(totalPoints);
+//return (double) totalPoints / this.grades.size();
+//    }
+
+
