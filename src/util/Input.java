@@ -8,7 +8,7 @@ public class Input {
 //    ------------------- EXERCISE 1.----------------
 
     //PROPERTIES
-    public Scanner scanner;
+    public static Scanner scanner;
 
     //    CONSTRUCTOR
 
@@ -88,6 +88,10 @@ public class Input {
             System.out.println("Input is not an decimal");
         }
         return getDouble();
+    }
+
+    public static boolean hasNewLine(){
+        return scanner.hasNextLine();
     }
 
 //    public int getBinary(){
