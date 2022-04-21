@@ -53,7 +53,9 @@ public class Input {
         System.out.println("Please enter an integer.");
         try{
             return Integer.parseInt(getString());
-        } catch (Exception e) {
+        } catch (NumberFormatException nfe) {
+            System.out.println(nfe.getMessage());
+            nfe.printStackTrace();
             System.out.println("Input is not an integer");
         }
         return getInt();
@@ -80,9 +82,26 @@ public class Input {
         System.out.println("Please enter an decimal.");
         try{
             return Double.parseDouble(getString());
-        } catch (Exception e) {
+        } catch (NumberFormatException nfe) {
+            System.out.println(nfe.getMessage());
+            nfe.printStackTrace();
             System.out.println("Input is not an decimal");
         }
         return getDouble();
     }
+
+//    public int getBinary(){
+//        System.out.println("Please enter a binary num...");
+//        try {
+////            String binaryString = "10010";
+//            int foo = Integer.parseInt(getString(), 2);
+//
+//            System.out.println(foo);
+//        } catch (NumberFormatException e) {
+//            System.out.println("Error: The binary string is not valid");
+//            return getBinary();
+//        }
+//
+//        return 0;
+//    }
 }

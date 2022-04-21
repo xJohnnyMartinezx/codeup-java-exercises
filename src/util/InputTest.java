@@ -9,6 +9,9 @@ public class InputTest {
         Input getInt = new Input();
         Input decMinMax = new Input();
         Input decNum = new Input();
+        Input convertBinary = new Input();
+
+        System.out.println(convertBinary.getBinary());
         System.out.println("Please enter a string.");
         System.out.println(input1.getString());
         System.out.println(yesOrNo.yesNo("Enter Yes or No."));
