@@ -19,8 +19,8 @@ public class Input {
 
     // GETTERS AND SETTERS
 
-    public String getString(String prompt) {
-        System.out.println(prompt);
+    public String getString() {
+//        System.out.println(prompt);
         return this.scanner.nextLine();
     }
 
@@ -47,10 +47,18 @@ public class Input {
     }
 
     //    --------------------
+
+
     int getInt(){
-        System.out.println("Enter an integer");
-        return this.scanner.nextInt();
+        System.out.println("Please enter an integer.");
+        try{
+            return Integer.parseInt(getString());
+        } catch (Exception e) {
+            System.out.println("Input is not an integer");
+        }
+        return getInt();
     }
+
 
     //    --------------------
 
@@ -68,8 +76,13 @@ public class Input {
 
     //    --------------------
 
-    public double getDouble(String prompt){
-        System.out.println(prompt);
-        return this.scanner.nextDouble();
+    public double getDouble(){
+        System.out.println("Please enter an decimal.");
+        try{
+            return Double.parseDouble(getString());
+        } catch (Exception e) {
+            System.out.println("Input is not an decimal");
+        }
+        return getDouble();
     }
 }
